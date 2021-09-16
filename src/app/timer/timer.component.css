@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+h1, h2, p{
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+img {
+width: 150px;
+ border-radius: 80%;
+ border-style: solid;
+ display: block;
+ margin-left: auto;
+ margin-right: auto;
+ 
+}
+
+#tabela {
+  font-size: 0.8em;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table, th, td{
+  
+  border: 1px solid #ccc;
+  padding: 0 15px 0 15px;
+}
+
+td {
+  text-align: center;
+  }
+
+.badge {
+  font-family: 'Orbitron', sans-serif;
+ } 
+
+label {
+  width: 100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+  }
+
+.row{
+  display: flex;
+  justify-content: center;
+}
+
+ #reset {
+  
+    display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     
+    }

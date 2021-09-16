@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <h1>Disciplinas</h1>
+
+
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.InX0oHL4yAEMDE4oFE4L6AHaHa%26pid%3DApi&f=1">
+
+
+  <div class="card-body">
+    <table class="table table-stripped table-dark">
+
+      <thead>
+        <tr>
+          <th>Disciplinas atuais</th>
+
+          <th></th>
+        </tr>
+      </thead>
+
+      <tbody>
+
+        <tr *ngFor="let item of grade.getDisciplinas(); index as i">
+        
+          <td>{{item.name}}</td>
+          <td><button class="btn btn-danger btn-sm" (click)="this.grade.removerDisciplina(i)">x</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="form-group text-center">
+    <input class="form-control-md" type="text" #disciplina placeholder="Digite nova disciplina">
+  </div>
+
+  <div class="d-grid gap-2 col-2 mx-auto">
+    <button class="btn btn-success btn-sm" (click)="this.grade.adicionarDisciplina(disciplina.value); disciplina.value='';">Incluir</button>
+  </div>
+</div>
